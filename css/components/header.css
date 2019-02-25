@@ -1,0 +1,126 @@
+@import "../libs/vars.css";
+@import "../libs/main.css";
+
+/* Header */
+
+.wrapper-banner{
+    background-image: url("../../img/bgr_mobile.png");
+    background-repeat: no-repeat;
+    height: 54rem;
+    width: 32rem;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+.header{
+    padding-top: 2rem;
+}
+.log-in,
+.sign-in,
+.banner-link,
+.section-item-name,
+.section-item-descr,
+.section-link{
+    font-size: 1.4rem;
+}
+.log-in,
+.sign-in{
+    width: 9rem;
+    height: 3.6rem;
+    background-color: transparent;
+}
+.log-in{
+    border: none;
+}
+.sign-in{
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+.logo{
+    font-size: 2rem;
+    margin-top: 11.5rem;
+}
+.header-banner{
+    font-size: 3rem;
+    margin: 3.5rem 1rem 1.7rem 1rem;
+}
+.descr-banner{
+    font-size: 1.8rem;
+    font-family: var(--second-font);
+    font-weight: 300;
+    margin: 0 5rem 2rem 5rem;
+}
+.banner-link,
+.section-link{
+    width: 28rem;
+    height: 4rem;
+    border-radius: 20px;
+    line-height: 40px;
+    margin: 0 2rem;
+}
+
+.banner-link{
+    background-color: var(--color-link);
+}
+
+@media screen and (min-width:48em){
+    .wrapper-banner{
+        background-image: url("../../img/bgr_tablet.png");
+        width: 76.8rem;
+        height: 70rem;
+    }
+    .header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0 5.4rem 16rem 5.4rem;
+        padding-top: 4.8rem;
+    }
+    .logo{
+        margin: 0;
+    }
+    .banner-link{
+        margin: 0 auto;
+        width: 22.5rem;
+    }
+    .header-banner{
+        margin-bottom: 4rem;
+        font-size: 5.2rem;
+        display: inline-block;
+        width: 51.2rem;
+    }
+    .descr-banner{
+        margin-bottom: 3.5rem;
+        font-size: 2.2rem;
+    }
+} 
+
+@media screen and (min-width:90em){
+    .wrapper-banner{
+        background-image: url(../../img/bgr_desktop.png);
+        width: 144rem;
+    }
+    .header{
+        width: 94.2rem;
+        margin: 0 auto;
+        margin-bottom: 15rem;
+    }
+    .log-in:hover,
+.sign-in:hover,
+.logo:hover,
+.logo:focus,
+.log-in:focus,
+.sign-in:focus{
+    color:  var(--font-color-descr);
+    border-color: var(--font-color-descr);
+}
+.log-in,
+.sign-in{
+    cursor: pointer;
+}
+    .banner-link:hover{
+        background-color: var(--font-color-banner);
+        color: var(--color-link);
+    }
+}
+
