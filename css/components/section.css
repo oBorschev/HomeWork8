@@ -42,7 +42,9 @@
 .section-partners{
     text-align: center;
     width: 32rem;
-    margin-bottom: 5.7rem;
+    /* margin-bottom: 5.7rem; */
+    padding-bottom: 5.7rem;
+    padding-top: 7rem;
 }
 
 .section-header{
@@ -51,9 +53,12 @@
 .section-list{
     display: inline-block;;
 }
-.section-item-descr{
-    margin-top:2rem;
+.section-item-name{
+    margin-bottom: 2rem;
 }
+/* .section-item-descr{
+    margin-top:2rem;
+} */
 .section-item{
     margin-bottom: 2.5rem;
     width: 22rem;
@@ -70,13 +75,16 @@
     .section-partners{
         width: 48rem;
         margin: 0 auto;
-        margin-bottom: 4rem;
+        /* margin-bottom: 4rem; */
     }
     .section-link{
         margin: 0 auto;
     }
+    .section-header{
+        margin-bottom: 3.3rem;
+    }
     .section-list{
-        margin-top: 3.3rem;
+        /* margin-top: 3.3rem; */
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
